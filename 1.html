@@ -2,104 +2,121 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹디자인개발기능사 레이아웃</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        #wrap{
-            width: 1200px;
-            margin: 0 auto;
-        }
-        #header{
-            width: 1200px;
-           display: flex;
-         
-        }
-        #header .logo{
-            width: 20%;
-            height: 100px;
-            background-color: #644f4f;
-        }
-        #header .nav{
-            width: 80%;
-            height: 100px;
-            background-color: #f3eded;
-        }
+    <title>Vallery Festival</title>
 
-        
-        #slider{
-            width: 1200px;
-            height: 300px;
-            background-color: #522d2d;
-        }
-        #contents{
-            width: 1200px;
-            height: 200px;
-            display: flex;
-        }
-        #contents .contents1{
-            width: 33.3333%;
-            height: 200px;
-            background-color: #d1d1d1;
-        }
-        #contents .contents2{
-            width: 33.3333%;
-            height: 200px;
-            background-color: #c7c7c7;
-        }
-        #contents .contents3{
-            width: 33.3333%;
-            height: 200px;
-            background-color: #bcbcbc;
-        }
-        #footer{
-            width: 1200px;
-            height: 100px;
-            display: flex;
-        }
-        #footer .footer1{
-            width: 20%;
-            height: 100px;
-            background-color: #b1b1b1;
-        }
-        #footer .footer2{
-            width: 60%;
-            height: 100px;
-            background-color: #a3a3a3;
-        }
-        #footer .footer3{
-            width: 20%;
-            height: 100px;
-            background-color: #9d9d9d;
-           
-        }
-    </style>
-</head> 
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- script -->
+    <script src="script/jquery.min.js"></script>
+    <script src="script/script.js"></script>
+</head>
 <body>
-    <div id="wrap">
-        <div id="header">
-            <div class="logo"></div>
-            <div class="nav"></div>
+      <div id="wrap">
+        <aside id="aside">
+    <h1 class="logo">
+        <a href="#">Vallery Festival</a>
+    </h1>
+    <nav class="nav">
+        <ul>
+            <li><a href="#">축제소개</a>
+                <ul class="submenu">
+                    <li><a href="#">Festival소개</a></li>
+                    <li><a href="#">행사장 안내</a></li>
+                    <li><a href="#">조직위원회</a></li>
+                </ul>
+            </li>
+            <li><a href="#">예약안내</a>
+                <ul class="submenu">
+                    <li><a href="#">예약하기</a></li>
+                    <li><a href="#">예약확인/취소</a></li>
+                    <li><a href="#">단체예약문의</a></li>
+                </ul>
+            </li>
+            <li><a href="#">정보서비스</a>
+                <ul class="submenu">
+                    <li><a href="#">고릴라즈</a></li>
+                    <li><a href="#">메이저 레이저</a></li>
+                    <li><a href="#">아우스게인</a></li>
+                    <li><a href="#">타임로드</a></li>
+                </ul>
+            </li>
+            <li><a href="#">커뮤니티</a>
+                <ul class="submenu">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">사진갤러리</a></li>
+                    <li><a href="#">영상갤러리</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</aside>
+<!-- //aside -->
+        <!-- //asdile -->
+ 
+        <main id="main">
+            <article id="slider">
+                 <div class="sliderWrap">
+                    <div class="slider s1">
+                        <a href="#"><img src="images/slider01.jpg" alt="Vallery Festival1"></a>
+                        <div class="text">
+                            <h2>Vallery <em>Festival</em></h2>
+                            <p>신나는 축제 놀아봅시다!</p>
+                    </div>
         </div>
-        <!-- //header-->
-        <div id="slider"></div>
-        <!-- //slider-->
-        <div id="contents">
-            <div class="contents1"></div>
-            <div class="contents2"></div>
-            <div class="contents3"></div>
+        <div class="slider s2">
+            <img src="images/slider02.jpg" alt="Vallery Festival1">
+            <div class="text">
+                <h2>Vallery <em>Festival</em></h2>
+                <p>신나는 축제 놀아봅시다!</p>
+            </div>
         </div>
-        <!-- //contents-->
+        <div class="slider s3">
+            <img src="images/slider03.jpg" alt="Vallery Festival1">
+            <div class="text">
+                <h2>Vallery <em>Festival</em></h2>
+                <p>신나는 축제 놀아봅시다!</p>
+            </div>
+        </div>
+    </div>
+</article>
 
-        <div id="footer">
-            <div class="footer1"></div>
-            <div class="footer2"></div>
-            <div class="footer3"></div>
-        </div>
-        
+            <!-- //slider -->
+
+            <section id="contents">
+                <article class="notice">
+                    <div class="tab-menu">
+                        <div class="tab-btn">
+                            <ul>
+                                <li class="active"><a href="#">탭메뉴1</a></li>
+                                <li><a href="#">탭메뉴2</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-cont">
+                            <div>
+                                1<br>2<br>3<br>4
+                            </div>
+                            <div>
+                                5<br>6<br>7<br>8
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="gallery"></article>
+                <article class="banner"></article>
+            </section>
+            <!-- //contents -->
+
+            <footer id="footer">
+                <div class="footer1"></div>
+                <div class="footer2"></div>
+                <div class="footer3"></div>
+            </footer>
+            <!-- //footer -->
+        </main>
+        <!-- //main -->
     </div>
 </body>
 </html>
